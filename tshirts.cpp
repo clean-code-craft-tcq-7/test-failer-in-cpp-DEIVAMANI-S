@@ -1,13 +1,17 @@
 #include <iostream>
 #include <assert.h>
 
-char size(int cms) {
+// T-shirt size boundaries
+constexpr int MEDIUM_LOWER_LIMIT = 38;
+constexpr int LARGE_LOWER_LIMIT = 42;
+
+char getTshirtSize(int shoulderWidthIncms) {
     char sizeName = '\0';
-    if(cms < 38) {
+    if(shoulderWidthIncms < MEDIUM_LOWER_LIMIT) {
         sizeName = 'S';
-    } else if(cms > 38 && cms < 42) {
+    } else if(shoulderWidthIncms < LARGE_LOWER_LIMIT) {
         sizeName = 'M';
-    } else if(cms > 42) {
+    } else {
         sizeName = 'L';
     }
     return sizeName;
@@ -15,10 +19,9 @@ char size(int cms) {
 
 void testTshirtSize() {
     std::cout << "\nTshirt size test\n";
-    assert(size(37) == 'S');
-    assert(size(37) == 'M');//Test case for 38 falling under size 'M'
-    assert(size(40) == 'M');
-    assert(size(42) == 'M');//Test case for 38 falling under size 'L'
-    assert(size(43) == 'L');
+    assert(getTshirtSize(37) == 'S');
+    assert(getTshirtSize(38) == 'M');
+    assert(getTshirtSize(40) == 'M');
+    assert(getTshirtSize(43) == 'L');
     std::cout << "All is well (maybe!)\n";
 }
