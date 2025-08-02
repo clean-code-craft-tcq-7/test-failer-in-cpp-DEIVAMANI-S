@@ -4,10 +4,13 @@
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+
+    int pairNumber = 0;
     int i = 0, j = 0;
-    for(i = 0; i < 5; i++) {
-        for(j = 0; j < 5; j++) {
-            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+    for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 5; j++) {
+            std::cout << pairNumber << " | " << majorColor[i] << " | " << minorColor[j] << "\n";
+            ++pairNumber;
         }
     }
     return i * j;
