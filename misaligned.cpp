@@ -13,7 +13,7 @@ int printColorMap() {
             ++pairNumber;
         }
     }
-    return i * j;
+    return pairNumber;
 }
 
 void testPrintColorMap() {
