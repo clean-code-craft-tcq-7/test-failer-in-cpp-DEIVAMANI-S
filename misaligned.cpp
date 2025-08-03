@@ -1,4 +1,3 @@
-what will be the output of below c++ program
 #include <iostream>
 #include <assert.h>
 #include <iomanip>
