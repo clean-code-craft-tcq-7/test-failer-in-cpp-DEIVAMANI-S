@@ -92,10 +92,8 @@ void testGenerateColorPairs() {
     assert(pairs[22].second == "Green");
     assert(pairs[23].first == "Violet");
     assert(pairs[23].second == "Brown");
-    // assert(pairs[24].first == "Violet");
-    // assert(pairs[24].second == "Slate");
     assert(pairs[24].first == "Violet");
-    assert(pairs[24].second == "Yellow");
+    assert(pairs[24].second == "Slate");
 
     std::cout << "All color pair tests passed!\n";
 }
