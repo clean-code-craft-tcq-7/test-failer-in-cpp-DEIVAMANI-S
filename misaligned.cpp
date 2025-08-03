@@ -48,7 +48,7 @@ void testGenerateColorPairs() {
     std::cout << "All color pair tests passed!\n";
 }
 
-int testPrintColorMap() {
+void testPrintColorMap() {
     std::cout << "Print color map test\n";
 
     std::vector<std::pair<std::string, std::string>> pairs = generateColorPairs();
