@@ -1,6 +1,7 @@
+#include "../src/tshirts.h"
+
 #include <iostream>
 #include <assert.h>
-#include "tshirts.h"
 
 constexpr int MEDIUM_LOWER_LIMIT = 38;
 constexpr int LARGE_LOWER_LIMIT = 42;

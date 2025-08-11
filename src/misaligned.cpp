@@ -1,4 +1,5 @@
-#include "misaligned.h"
+#include "../src/misaligned.h"
+
 #include <iostream>
 #include <sstream>
 #include <iomanip>
